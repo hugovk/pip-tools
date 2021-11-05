@@ -22,6 +22,7 @@ jobs:
           - Windows
           - macOS
         python-version:
+          - 3.11-dev
           - "3.10"
           - 3.9
           - 3.6
@@ -30,10 +31,6 @@ jobs:
         pip-version:
           - "latest"
           - "previous"
-        include:
-          - os: Ubuntu
-            python-version: 3.11-dev
-            pip-version: latest
 
     env:
       PY_COLORS: 1
